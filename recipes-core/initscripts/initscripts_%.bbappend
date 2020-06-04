@@ -1,6 +1,6 @@
-# Copyright (C) 2020 Beacon EmbeddedWorks
+# Copyright (C) 2020 Compass Electronics Group, LLC
 
-DESCRIPTION = "i.MX custom config script for debug console suppporting i.MX8 Beacon EmbeddedWorks kits."
+DESCRIPTION = "Custom config script for debug console suppporting Beacon EmbeddedWorks kits."
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
