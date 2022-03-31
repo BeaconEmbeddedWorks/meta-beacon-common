@@ -4,9 +4,9 @@ HOMEPAGE = ""
 
 LICENSE = "CLOSED"
 
-BRANCH = "beacon_trunk"
+BRANCH = "trunk"
 REPOPATH = "bitbucket.logicpd.com/scm/lcts/eeprom-decoder.git"
-SRCREV = "01e94fe6ea11362e0e3208147aa7bfd14ccde5cc"
+SRCREV = "47c440aec2384b0c6bc242692f9c4b4b48961625"
 
 SRC_URI = "git://${REPOPATH};protocol=https;branch=${BRANCH} \
 	"
