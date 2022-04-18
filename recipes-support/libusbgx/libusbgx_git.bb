@@ -22,11 +22,11 @@ SRC_URI = " \
 S = "${WORKDIR}/git"
 
 MACHINE_NAME ?= "${MACHINE}"
-do_compile_append () {
+do_compile:append () {
     sed -e "s:@@PRODUCT_NAME@@:${MACHINE_NAME}:" ${WORKDIR}/g1.schema.in > ${WORKDIR}/g1.schema
 }
 
-do_install_append () {
+do_install:append () {
     if ${@bb.utils.contains('DISTRO_FEATURES','systemd','true','false',d)}; then
         install -d ${D}${systemd_unitdir}/system/
         install -m 0644 ${WORKDIR}/usbg.service ${D}${systemd_unitdir}/system

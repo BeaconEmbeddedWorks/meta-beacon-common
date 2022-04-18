@@ -6,7 +6,7 @@ LICENSE = "CLOSED"
 
 BRANCH = "trunk"
 REPOPATH = "github.com/BeaconEmbeddedWorks/eeprom-decoder.git"
-SRCREV = "47c440aec2384b0c6bc242692f9c4b4b48961625"
+SRCREV = "8dfb67a8774cd75f0e3d8224a0b9cdd8888d19d5"
 SRC_URI = "git://${REPOPATH};protocol=https;branch=${BRANCH}"
 
 S = "${WORKDIR}/git/"
