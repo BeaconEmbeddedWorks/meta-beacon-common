@@ -9,7 +9,7 @@ REPOPATH = "github.com/BeaconEmbeddedWorks/eeprom-decoder.git"
 SRCREV = "8dfb67a8774cd75f0e3d8224a0b9cdd8888d19d5"
 SRC_URI = "git://${REPOPATH};protocol=https;branch=${BRANCH}"
 
-S = "${WORKDIR}/git/"
+S = "${WORKDIR}/git"
 
 EXTRA_OEMAKE = "'CC=${CC}' 'RANLIB=${RANLIB}' 'AR=${AR}' 'CFLAGS=${CFLAGS}'\
 	'LDFLAGS=${LDFLAGS}'\
