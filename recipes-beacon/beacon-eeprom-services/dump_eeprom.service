@@ -1,0 +1,9 @@
+[Unit]
+Description=Dump EEPROM contents
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/dump-eeprom.sh
+
+[Install]
+WantedBy=multi-user.target
