@@ -1,2 +1,0 @@
-PACKAGECONFIG = "dng gst pycamera"
-
