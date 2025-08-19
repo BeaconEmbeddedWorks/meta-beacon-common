@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 BRANCH = "master"
 REPOPATH = "linuxtv.org/edid-decode.git"
 SRCREV = "9ba4e90f3c0705351d32f526653e3e765fa2cf64"
-SRC_URI = "git://${REPOPATH};protocol=git;branch=${BRANCH}"
+SRC_URI = "git://${REPOPATH};protocol=https;branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
 

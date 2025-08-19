@@ -11,17 +11,16 @@ RPROVIDES:${PN}-base = "${PN}"
 
 SRC_URI = "file://test-neon.c"
 
-S = "${THISDIR}/files"
+S = "${WORKDIR}"
 
 TARGET_CC_ARCH += "${LDFLAGS}"
 
 do_compile() {
-	${CC} -O3 -ftree-vectorize test-neon.c -o test-neon
+	${CC} -O3 -ftree-vectorize ${WORKDIR}/test-neon.c -o test-neon
 }
 
 do_install() {
 	install -d ${D}${bindir}
 	install -m 0755 test-neon ${D}${bindir}
 }
-
 

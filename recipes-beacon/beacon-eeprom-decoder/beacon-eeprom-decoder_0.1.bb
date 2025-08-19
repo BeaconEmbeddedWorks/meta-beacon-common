@@ -19,5 +19,3 @@ do_install () {
         install -d ${D}/${bindir}
         install -m 0755 ${S}/tools/${PN} ${D}/${bindir}
 }
-
-SRC_URI[md5sum] = "c41f58f9b270e028f15d6506654d5291"
